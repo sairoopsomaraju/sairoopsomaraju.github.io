@@ -673,6 +673,83 @@
 
 
 
+
+
+
+
+
+
+/* CSS within your <style> tag or external stylesheet */
+
+@media (max-width: 768px) {
+  /* This will ensure the navbar is visible on smaller screens */
+  #nav ul {
+    display: block;
+    text-align: center;
+  }
+
+  #nav ul li {
+    display: block;
+    margin-right: 0;
+    border-right: 0;
+    padding: 10px 0; /* Add padding for tap targets */
+  }
+
+  /* This hides the menu icon only if the nav is not toggled */
+  #nav ul:not(.responsive) .icon {
+    display: none;
+  }
+
+  /* This will adjust the font size of the thumbnail descriptions on smaller screens */
+  .thumbnail-description {
+    font-size: 1rem; /* Adjust this value as needed */
+  }
+
+  /* Adjust thumbnail container padding on small screens */
+  .thumbnail-container {
+    padding: 8px;
+  }
+
+  /* Adjust thumbnail items to take full width minus the gap on small screens */
+  .thumbnail-item {
+    flex: 0 1 calc(100% - 16px); /* One item per row minus the gap */
+  }
+}
+
+/* This will ensure the menu icon is always visible on smaller screens */
+#nav .icon {
+  display: inline-block;
+}
+
+/* Ensure that clicking the menu icon shows the navigation items */
+/* Add JavaScript to toggle the "responsive" class on the "ul" when the icon is clicked */
+.icon {
+  cursor: pointer;
+}
+
+/* Style for when navigation is toggled */
+#nav ul.responsive {
+  display: block;
+}
+
+/* Style for when navigation items are shown on small screens */
+#nav ul.responsive li {
+  display: block;
+}
+
+/* Additional responsive adjustments can be placed within media queries as needed */
+
+
+
+
+
+
+
+
+
+
+
+
 #about .find-me {
   display: flex; /* Use flexbox for inline layout */
   align-items: center; /* Center align the items vertically */

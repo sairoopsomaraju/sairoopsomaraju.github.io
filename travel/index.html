@@ -81,6 +81,18 @@
     
 
 
+<script>
+  // This script toggles the 'responsive' class on the navigation 'ul' when the icon is clicked
+  document.addEventListener('DOMContentLoaded', function() {
+    var menuIcon = document.querySelector('#nav .icon a');
+    var navList = document.querySelector('#nav ul');
+
+    menuIcon.addEventListener('click', function(event) {
+      event.preventDefault();
+      navList.classList.toggle('responsive');
+    });
+  });
+</script>
 
 
 
@@ -90,7 +102,7 @@
 <section class="thumbnail-container">
   <!-- Thumbnail item 1 -->
   <div class="thumbnail-item">
-    <a href="../images/linus-lpc.jpeg">
+    <a href="../images/photos/linus-lpc.jpeg">
       <img src="../images/linus-lpc.jpeg" alt="Linus at LPC richmond">
       <div class="thumbnail-description">Meeting Linus Torvalds :)</div>
     </a>
@@ -98,7 +110,7 @@
   
   <!-- Thumbnail item 2 -->
   <div class="thumbnail-item">
-    <a href="../images/black-sand.jpeg">
+    <a href="../images/photos/black-sand.jpeg">
       <img src="../images/black-sand.jpeg" alt="Iceland black sand beach">
       <div class="thumbnail-description">Diamond beach, Iceland</div>
     </a>
@@ -106,7 +118,7 @@
   
   <!-- Thumbnail item 3 -->
   <div class="thumbnail-item">
-    <a href="../images/moomaw.jpeg">
+    <a href="../images/photos/moomaw.jpeg">
       <img src="../images/moomaw.jpeg" alt="Canoeing on the Moomaw Lake, VA">
       <div class="thumbnail-description">Canoeing on the Moomaw Lake</div>
     </a>
