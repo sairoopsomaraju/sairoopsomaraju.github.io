@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>roop</title>
 
 <link rel="stylesheet" href="../css/style-white.css">
@@ -10,6 +11,42 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 <!link rel="stylesheet" href="https://whimsicalspren.netlify.app/css/custom.css"> 
 <link rel="icon" type="image/png" href="../images/dogie.jpeg" />
+
+
+
+<style>
+  .thumbnail-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; /* Adjust the space between thumbnails */
+    padding: 16px;
+  }
+
+  .thumbnail-item {
+    flex: 0 1 calc(33.333% - 32px); /* Three items per row minus the gap */
+    margin-bottom: 16px; /* Space below each item */
+  }
+
+  .thumbnail-item a {
+    display: block;
+    text-decoration: none;
+    color: #333; /* Text color */
+  }
+
+  .thumbnail-item img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd; /* Add a border to the thumbnail */
+    border-radius: 8px; /* Optional: rounds the corners */
+  }
+
+  .thumbnail-description {
+    margin-top: 8px;
+    text-align: center; /* Center the text below the thumbnail */
+  }
+</style>
+
+
 
 </head>
 
@@ -50,10 +87,31 @@
 
 
 
-<section id="post">
-  <h2>Chill!! I'm yet to think something to write :)</h2>
+<section class="thumbnail-container">
+  <!-- Thumbnail item 1 -->
+  <div class="thumbnail-item">
+    <a href="../images/linus-lpc.png">
+      <img src="../images/linus-lpc.png" alt="Linus at LPC richmond">
+      <div class="thumbnail-description">Meeting Linus Torvalds :)</div>
+    </a>
+  </div>
+  
+  <!-- Thumbnail item 2 -->
+  <div class="thumbnail-item">
+    <a href="../images/black-sand.jpeg">
+      <img src="../images/black-sand.jpeg" alt="Iceland black sand beach">
+      <div class="thumbnail-description">Diamond beach, Iceland</div>
+    </a>
+  </div>
+  
+  <!-- Thumbnail item 3 -->
+  <div class="thumbnail-item">
+    <a href="../images/moomaw.jpeg">
+      <img src="../images/moomaw.jpeg" alt="Canoeing on the Moomaw Lake, VA">
+      <div class="thumbnail-description">Canoeing on the Moomaw Lake</div>
+    </a>
+  </div>
 </section>
-
 
 
 
