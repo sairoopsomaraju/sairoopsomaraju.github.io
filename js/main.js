@@ -10,6 +10,16 @@ if (!!$.prototype.justifiedGallery) {
   $(".article-gallery").justifiedGallery(options);
 }
 
+function toggleDropdown(id) {
+  var dropdown = document.getElementById(id);
+  if (dropdown.style.display === 'block') {
+    dropdown.style.display = 'none';
+  } else {
+    dropdown.style.display = 'block';
+  }
+}
+
+
 $(document).ready(function() {
 
   /**

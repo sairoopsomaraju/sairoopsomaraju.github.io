@@ -675,6 +675,79 @@
 
 
 
+
+
+
+
+#education h2,
+#research-experience h2,
+#work-experience h2 {
+  font-size: 1.2em;
+  margin-top: 15px;
+}
+
+.education-entry,
+.job-entry {
+  margin-bottom: 7px;
+}
+
+.education-header,
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0px;
+}
+
+.education-name strong,
+.job-title strong {
+  font-size: 1em;
+}
+
+.education-duration,
+.job-duration {
+  font-size: 0.8em;
+  color: grey;
+}
+
+.education-details p,
+.job-details p {
+  font-size: 0.9em;
+  margin: 0;
+  padding: 2px 0;
+}
+
+/* To further separate sections */
+section {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* If the last section should not have a bottom border */
+section:last-child {
+  border-bottom: none;
+}
+
+/* Add any additional CSS you need for positioning and spacing */
+
+/* Add a border line under the header */
+#header {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px; /* Add some space below the header elements */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
   @media screen and (max-width: 480px) {
     #header #title {
       display: table;
