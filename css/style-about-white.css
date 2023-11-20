@@ -464,13 +464,15 @@
     color: #383838;
     font-display: swap;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     font-family: "JetBrains Mono", monospace;
     line-height: 1.725;
     text-rendering: geometricPrecision;
     flex: 1;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
+    padding-right: 1rem; /* Or another value that suits your design */
+    padding-left: 1rem; /* Or another value that suits your design */
   }
   .content {
     position: relative;
@@ -478,6 +480,7 @@
     flex-direction: column;
     min-height: 100%;
     overflow-wrap: break-word;
+    max-width: 75rem; /* or 100% for full width */
   }
   .content p {
     hyphens: auto;
@@ -556,16 +559,28 @@
     }
   }
   .max-width {
-    max-width: 48rem;
+    max-width: 75rem;
   }
   @media (max-width: 480px) {
     .px3 {
-      padding-right: 1rem;
-      padding-left: 1rem;
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
     }
     .my4 {
       margin-top: 2rem;
       margin-bottom: 2rem;
+    }
+    body {
+      font-size: 18px; /* Increased font size for small screens */
+    }
+
+    /* You can also target specific elements or classes if needed */
+    h1, .h1 {
+      font-size: 2.5rem; /* Larger size for h1 headers */
+    }
+
+    h2, .h2 {
+      font-size: 2rem; /* Larger size for h2 headers */
     }
   }
   @media (min-width: 480px) {
